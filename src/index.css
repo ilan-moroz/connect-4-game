@@ -12,3 +12,10 @@ body {
   font-family: Josefin Sans;
   background-color: rgb(121, 60, 254);
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

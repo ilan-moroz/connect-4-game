@@ -1,5 +1,11 @@
+import GameBoard from './components/GameBoard/GameBoard';
+
 function App() {
-  return <h1>Connect 4</h1>;
+  return (
+    <div className="App">
+      <GameBoard />
+    </div>
+  );
 }
 
 export default App;
