@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import classes from './GameBoard.module.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
+import { playerActions } from '../../store/playerSlice';
 
 const GameBoard = () => {
   const [board, setBoard] = useState(createEmptyBoard());
+  const dispatch = useDispatch();
   const currentPlayer = useSelector(
     (state: RootState) => state.player.currentPlayer
   );
@@ -27,7 +29,7 @@ const GameBoard = () => {
     // Update the board state
     setBoard(newBoard);
     // Switch to the other player
-    // setCurrentPlayer(currentPlayer === 'red' ? 'yellow' : 'red');
+    dispatch(playerActions.setCurrentPlayer());
   };
 
   return (

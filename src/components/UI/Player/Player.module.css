@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(253, 102, 133);
   width: 10rem;
   height: 3rem;
   margin: 1rem;
@@ -11,4 +10,12 @@
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.playerRed {
+  background: rgb(253, 102, 133);
+}
+
+.playerYellow {
+  background: rgb(255, 206, 103);
 }
