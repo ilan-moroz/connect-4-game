@@ -6,6 +6,8 @@
   background-color: #eee;
   border-radius: 3rem;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .row {
@@ -19,4 +21,6 @@
   border-radius: 50%;
   background-color: rgb(121, 60, 254);
   margin: 5px;
+  box-shadow: rgb(7, 10, 12) 3px 3px 6px 0px inset,
+    rgba(14, 2, 2, 0.5) -3px -3px 6px 1px inset;
 }
