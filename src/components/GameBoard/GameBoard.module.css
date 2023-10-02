@@ -23,4 +23,25 @@
   margin: 5px;
   box-shadow: rgb(7, 10, 12) 3px 3px 6px 0px inset,
     rgba(14, 2, 2, 0.5) -3px -3px 6px 1px inset;
+  position: relative;
+}
+
+.red,
+.yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: rgb(7, 10, 12) 3px 3px 6px 0px inset,
+    rgba(14, 2, 2, 0.5) -3px -3px 6px 1px inset;
+}
+
+.red {
+  background-color: rgb(253, 102, 135);
+}
+
+.yellow {
+  background-color: rgb(255, 206, 103);
 }
