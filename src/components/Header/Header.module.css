@@ -7,7 +7,13 @@
   font-family: 'geldotica';
   font-size: 6rem;
   margin-top: -4rem;
-  padding: 3rem;
+  padding: 1rem;
   color: #eee;
   text-shadow: rgb(19, 19, 19) 2px 2px 0px, rgb(22, 10, 10) 4px 4px 0px;
+}
+
+.btnBox {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
 }
