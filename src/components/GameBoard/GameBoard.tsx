@@ -1,9 +1,17 @@
 import { useState } from 'react';
 import classes from './GameBoard.module.css';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
 
 const GameBoard = () => {
   const [board, setBoard] = useState(createEmptyBoard());
-  const [currentPlayer, setCurrentPlayer] = useState('red');
+  const currentPlayer = useSelector(
+    (state: RootState) => state.player.currentPlayer
+  );
+  console.log(
+    '🚀 ~ file: GameBoard.tsx:11 ~ GameBoard ~ currentPlayer:',
+    currentPlayer
+  );
 
   function createEmptyBoard() {
     return Array.from({ length: 6 }, () => Array(7).fill(null));
@@ -23,7 +31,7 @@ const GameBoard = () => {
     // Update the board state
     setBoard(newBoard);
     // Switch to the other player
-    setCurrentPlayer(currentPlayer === 'red' ? 'yellow' : 'red');
+    // setCurrentPlayer(currentPlayer === 'red' ? 'yellow' : 'red');
   };
 
   return (
