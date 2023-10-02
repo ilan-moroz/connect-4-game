@@ -8,10 +8,6 @@ const GameBoard = () => {
   const currentPlayer = useSelector(
     (state: RootState) => state.player.currentPlayer
   );
-  console.log(
-    '🚀 ~ file: GameBoard.tsx:11 ~ GameBoard ~ currentPlayer:',
-    currentPlayer
-  );
 
   function createEmptyBoard() {
     return Array.from({ length: 6 }, () => Array(7).fill(null));
