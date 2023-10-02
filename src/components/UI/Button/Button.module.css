@@ -7,9 +7,19 @@
   color: #eee;
   cursor: pointer;
   margin: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .btn:hover {
   background-color: rgb(88, 18, 239);
-  transform: translateY(-5);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
